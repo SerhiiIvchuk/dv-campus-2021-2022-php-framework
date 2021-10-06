@@ -27,9 +27,9 @@ require_once 'data.php';
         <a href="/" title="{DV.Campus} PHP Framework">
             <img src="logo.jpg" alt="{DV.Campus} Logo" width="200"/>
         </a>
-        <<nav>
+        <nav>
             <ul>
-                <?php foreach (catalogGetCategories() as $category) : ?>
+                <?php foreach (catalogGetCategory() as $category) : ?>
                     <li>
                         <a href="<?= $category['url'] ?>"> <?= $category['name']?></a>
                     </li>

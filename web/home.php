@@ -35,7 +35,7 @@
 <!--        </menu>-->
           <nav>
                 <ul>
-                      <?php foreach (catalogGetCategories() as $category) : ?>
+                      <?php foreach (catalogGetCategory() as $category) : ?>
                           <li>
                               <a href="<?= $category['url'] ?>"> <?= $category['name']?></a>
                           </li>

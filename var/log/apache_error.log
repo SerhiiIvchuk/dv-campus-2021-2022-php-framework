@@ -1,1 +1,73 @@
 [Wed Oct 06 09:38:12.974975 2021] [autoindex:error] [pid 18] [client 172.17.0.3:36900] AH01276: Cannot serve directory /var/www/html/web/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Wed Oct 06 11:15:45.134811 2021] [autoindex:error] [pid 19] [client 172.17.0.3:57232] AH01276: Cannot serve directory /var/www/html/web/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive, referer: https://dv-campus-2021-2022-php-framework.local/home.php
+[Wed Oct 06 20:21:45.183451 2021] [php7:notice] [pid 18] [client 172.17.0.8:37380] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetCategories() in /var/www/html/web/home.php:38\nStack trace:\n#0 {main}\n  thrown in /var/www/html/web/home.php on line 38
+[Wed Oct 06 20:24:15.846953 2021] [php7:notice] [pid 19] [client 172.17.0.8:37402] PHP Fatal error:  Uncaught Error: Call to undefined function catalogGetCategories() in /var/www/html/web/home.php:38\nStack trace:\n#0 {main}\n  thrown in /var/www/html/web/home.php on line 38
+[Wed Oct 06 21:13:16.142483 2021] [core:error] [pid 21] [client 172.17.0.8:37844] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Wed Oct 06 21:15:42.063208 2021] [core:error] [pid 24] [client 172.17.0.8:37864] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Wed Oct 06 21:15:44.411980 2021] [core:error] [pid 23] [client 172.17.0.8:37866] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Wed Oct 06 21:15:44.681622 2021] [core:error] [pid 18] [client 172.17.0.8:37868] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Wed Oct 06 21:41:49.208875 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Notice:  Undefined variable: page in /var/www/html/web/index.php on line 17
+[Wed Oct 06 21:41:49.208928 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Stack trace:
+[Wed Oct 06 21:41:49.208940 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP   1. {main}() /var/www/html/web/index.php:0
+[Wed Oct 06 21:41:49.209065 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Warning:  require_once(/var/www/html/web): failed to open stream: Operation now in progress in /var/www/html/web/index.php on line 17
+[Wed Oct 06 21:41:49.209076 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Stack trace:
+[Wed Oct 06 21:41:49.209083 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP   1. {main}() /var/www/html/web/index.php:0
+[Wed Oct 06 21:41:49.209128 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 17
+[Wed Oct 06 21:41:49.209145 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP Stack trace:
+[Wed Oct 06 21:41:49.209151 2021] [php7:notice] [pid 19] [client 172.17.0.8:38172] PHP   1. {main}() /var/www/html/web/index.php:0
+[Wed Oct 06 21:56:58.212447 2021] [php7:notice] [pid 20] [client 172.17.0.8:38292] PHP Fatal error:  strict_types declaration must be the very first statement in the script in /var/www/html/web/index.php on line 3
+[Wed Oct 06 22:01:34.416351 2021] [php7:notice] [pid 23] [client 172.17.0.8:38354] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /var/www/html/web/category.php on line 45, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:02:15.341654 2021] [php7:notice] [pid 19] [client 172.17.0.8:38366] PHP Notice:  Undefined index: category-id in /var/www/html/web/category.php on line 45, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:02:15.341697 2021] [php7:notice] [pid 19] [client 172.17.0.8:38366] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:02:15.341704 2021] [php7:notice] [pid 19] [client 172.17.0.8:38366] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:02:15.341709 2021] [php7:notice] [pid 19] [client 172.17.0.8:38366] PHP   2. require_once() /var/www/html/web/index.php:23, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:02:15.341833 2021] [php7:notice] [pid 19] [client 172.17.0.8:38366] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to catalogGetCategoryProducts() must be of the type int, null given, called in /var/www/html/web/category.php on line 45 and defined in /var/www/html/web/data.php:75\nStack trace:\n#0 /var/www/html/web/category.php(45): catalogGetCategoryProducts(NULL)\n#1 /var/www/html/web/index.php(23): require_once('/var/www/html/w...')\n#2 {main}\n  thrown in /var/www/html/web/data.php on line 75, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:05:46.346478 2021] [php7:notice] [pid 21] [client 172.17.0.8:38382] PHP Notice:  Undefined index: category-id in /var/www/html/web/category.php on line 45, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:05:46.346527 2021] [php7:notice] [pid 21] [client 172.17.0.8:38382] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:05:46.346538 2021] [php7:notice] [pid 21] [client 172.17.0.8:38382] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:05:46.346546 2021] [php7:notice] [pid 21] [client 172.17.0.8:38382] PHP   2. require_once() /var/www/html/web/index.php:29, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:05:46.346742 2021] [php7:notice] [pid 21] [client 172.17.0.8:38382] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to catalogGetCategoryProducts() must be of the type int, null given, called in /var/www/html/web/category.php on line 45 and defined in /var/www/html/web/data.php:75\nStack trace:\n#0 /var/www/html/web/category.php(45): catalogGetCategoryProducts(NULL)\n#1 /var/www/html/web/index.php(29): require_once('/var/www/html/w...')\n#2 {main}\n  thrown in /var/www/html/web/data.php on line 75, referer: https://dv-campus-2021-2022-php-framework.local/
+[Wed Oct 06 22:08:11.285230 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP Warning:  Use of undefined constant data - assumed 'data' (this will throw an Error in a future version of PHP) in /var/www/html/web/category.php on line 43, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285305 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285325 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285340 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   2. require_once() /var/www/html/web/index.php:29, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285499 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP Warning:  Illegal string offset 'name' in /var/www/html/web/category.php on line 43, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285517 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285532 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:08:11.285563 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   2. require_once() /var/www/html/web/index.php:29, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:31:13.457225 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457259 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457268 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457331 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457343 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457349 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Thu Oct 07 08:52:43.530247 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:52:43.536537 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Stack trace:
+[Thu Oct 07 08:52:43.536558 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:52:43.536684 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:52:43.536701 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Stack trace:
+[Thu Oct 07 08:52:43.536713 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:54:10.770206 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:54:10.770276 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Stack trace:
+[Thu Oct 07 08:54:10.770296 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:54:10.770426 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:54:10.770443 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Stack trace:
+[Thu Oct 07 08:54:10.770453 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:11.341139 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:11.341200 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:11.341212 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:11.341326 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:11.341376 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:11.341393 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:12.743547 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:12.743589 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:12.743601 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:12.743680 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:12.743690 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:12.743697 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:59:28.592159 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:59:28.592206 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Stack trace:
+[Thu Oct 07 08:59:28.592215 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:59:28.592299 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:59:28.592309 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Stack trace:
+[Thu Oct 07 08:59:28.592316 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP   1. {main}() /var/www/html/web/index.php:0

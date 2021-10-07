@@ -1,5 +1,5 @@
 <?php
-require_once 'data.php';
+require_once '../src/data.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,22 +39,12 @@ require_once 'data.php';
     </header>
 
     <main>
-        <section title="Products">
-            <h1><?= $data['name'] ?></h1>
-            <div class="product-list">
-                <?php foreach(catalogGetCategoryProducts($data['category_id']) as $product) : ?>
-                    <div class="product">
-                        <a href="/<?= $product['url'] ?>" title="<?= $product['name'] ?>">
-                            <img src="/product-placeholder.png" alt="<?= $product['name'] ?>" width="200"/>
-                        </a>
-                        <a href="/<?= $product['url'] ?>" title="<?= $product['name'] ?>"><?= $product['name'] ?></a>
-                        <span><?= number_format($product['price'], 2 )?></span>
-                        <button type="button">Add To Cart</button>
-                    </div>
-                <?php endforeach; ?>
-
-            </div>
-        </section>
+<!--        @TODO: Implement recently viewed products -->
+        <img src="product-placeholder.png" alt="<?= $data['name'] ?>" width="300"/>
+        <h1><?= $data['name'] ?></h1>
+        <p><?= $data['description'] ?></p>
+        <span><?= $data['price'] ?></span>
+        <button type="button">Add To Cart</button>
     </main>
 
     <footer>

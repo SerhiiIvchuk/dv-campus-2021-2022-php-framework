@@ -35,3 +35,39 @@
 [Wed Oct 06 22:08:11.285517 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/samsung
 [Wed Oct 06 22:08:11.285532 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/samsung
 [Wed Oct 06 22:08:11.285563 2021] [php7:notice] [pid 24] [client 172.17.0.8:38420] PHP   2. require_once() /var/www/html/web/index.php:29, referer: https://dv-campus-2021-2022-php-framework.local/samsung
+[Wed Oct 06 22:31:13.457225 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457259 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457268 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457331 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457343 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP Stack trace:, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Wed Oct 06 22:31:13.457349 2021] [php7:notice] [pid 24] [client 172.17.0.8:38628] PHP   1. {main}() /var/www/html/web/index.php:0, referer: https://dv-campus-2021-2022-php-framework.local/apple
+[Thu Oct 07 08:52:43.530247 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:52:43.536537 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Stack trace:
+[Thu Oct 07 08:52:43.536558 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:52:43.536684 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:52:43.536701 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP Stack trace:
+[Thu Oct 07 08:52:43.536713 2021] [php7:notice] [pid 18] [client 172.17.0.2:41496] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:54:10.770206 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:54:10.770276 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Stack trace:
+[Thu Oct 07 08:54:10.770296 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:54:10.770426 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:54:10.770443 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP Stack trace:
+[Thu Oct 07 08:54:10.770453 2021] [php7:notice] [pid 20] [client 172.17.0.2:41518] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:11.341139 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:11.341200 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:11.341212 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:11.341326 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:11.341376 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:11.341393 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:12.743547 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:12.743589 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:12.743601 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:57:12.743680 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:57:12.743690 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP Stack trace:
+[Thu Oct 07 08:57:12.743697 2021] [php7:notice] [pid 21] [client 172.17.0.2:41542] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:59:28.592159 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Warning:  require_once(../src/page.php): failed to open stream: No such file or directory in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:59:28.592206 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Stack trace:
+[Thu Oct 07 08:59:28.592215 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP   1. {main}() /var/www/html/web/index.php:0
+[Thu Oct 07 08:59:28.592299 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Fatal error:  require_once(): Failed opening required '../src/page.php' (include_path='.:/usr/local/lib/php') in /var/www/html/web/index.php on line 36
+[Thu Oct 07 08:59:28.592309 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP Stack trace:
+[Thu Oct 07 08:59:28.592316 2021] [php7:notice] [pid 19] [client 172.17.0.2:41606] PHP   1. {main}() /var/www/html/web/index.php:0
